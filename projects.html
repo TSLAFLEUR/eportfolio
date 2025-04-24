@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tyler LaFleur</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial scale=1">
+		<style>body{
+			font-family: Arial, Helvetica, sans-serif;
+			}
+		</style>
+		<link rel="stylesheet" href="CSS/style.css">
+		<script src="js/buttonScript.js"></script>
+	</head>
+    <body>
+        <!-- Header -->
+                <div class="header">
+                    <h1>Tyler LaFleur</h1>
+                    <p>Computer Programmer</p>
+                </div>
+        <!-- Navbar -->
+                <div id="top" class="navbar">
+                    <a href="index.html">About Me</a>
+                    <a href="projects.html">Showcase</a>
+                    <a href="#" onclick="scrollFoot()" class="right">To Bottom</a>
+                </div>
+        <!-- Duck Quest -->
+                <div class="main" style="text-align: center;">
+                    <h1>Check out Duck Quest!</h1>
+                    <div class="showcase" style="padding-top: 25px; padding-bottom: 25px;">
+                        <video width="1280" height="720" controls> <source src="media/Duck-Quest.mp4" type="video/mp4" >
+                    </div>
+
+                    </video>
+                </div>
+        <!-- Showcase Section -->
+                <div id="aboutMe" class="main" style="text-align: center;">
+                    <h1>Final Ducks, Hangman, and custom shell</h1>
+                </div>
+                <div id="showcase" class="showcase" onload="currentSlide(1)">
+                    <br>
+                    <!-- Showcase Dots -->
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <br>
+                    <!-- Showcase Pictures -->
+                    <div class="slideshow">
+                        <div class="mySlides fade" style="display: initial">
+                            <div class="numbertext">1/3</div>
+                            <img src="media/showcase1.jpg" style="width: 100%">
+                            <br>
+                            <div class="text">Final Fantasy style game created in C++</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2/3</div>
+                            <img src="media/showcase2.jpg" style="width: 100%">
+                            <br>
+                            <div class="text">Hangman created in assembly language</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3/3</div>
+                            <img src="media/showcase3.jpg" style="width: 100%">
+                            <br>
+                            <div class="text">Custom shell program created in C</div>
+                        </div>
+                        <!-- Showcase Arrows -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <br>
+                    </div>
+                    
+                </div>
+        <!-- Contact Me Section -->
+                <div id="contactMe" class="row">
+                    <div id="CMmain" class="main">
+                        <h1>Contact Me:</h1>
+                        <p>Interested? Contact me at:</p>
+                        <p>Email: tslafleur@nic.edu</p>
+                        <p>Phone: ***-***-****</p>
+                    </div>
+                </div>
+        <!-- Footer -->
+                <div id="foot" class="footer">
+                    <a href="#" onclick="scrollTop()">To Top</a>
+                </div>
+            </body>
+        </html>
